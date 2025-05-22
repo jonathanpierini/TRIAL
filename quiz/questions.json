@@ -4,11 +4,11 @@
     "text": "Hai sperimentato cambiamenti nel tuo umore nell'ultimo mese?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "defusion"
   },
@@ -17,11 +17,11 @@
     "text": "Ti senti spesso ansioso o in preda a preoccupazioni?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "defusion"
   },
@@ -30,11 +30,11 @@
     "text": "Hai difficoltà ad addormentarti?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "contact"
   },
@@ -43,11 +43,11 @@
     "text": "Hai frequenti risvegli notturni?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "contact"
   },
@@ -56,11 +56,11 @@
     "text": "Hai pensieri ricorrenti che ti causano stress?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "defusion"
   },
@@ -69,11 +69,11 @@
     "text": "Hai pensieri intrusivi o immagini mentali disturbanti?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "defusion"
   },
@@ -82,11 +82,11 @@
     "text": "Metti in atto azioni ripetitive o rituali per ridurre ansia o disagio?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "acceptance"
   },
@@ -95,11 +95,11 @@
     "text": "Ti senti spesso stanco o senza energia?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "contact"
   },
@@ -108,11 +108,11 @@
     "text": "Hai difficoltà a concentrarti o a prendere decisioni?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "contact"
   },
@@ -121,11 +121,11 @@
     "text": "Hai avuto pensieri autolesionistici o suicidari?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "acceptance"
   },
@@ -134,11 +134,11 @@
     "text": "Ti capita di evitare situazioni difficili anche se sono importanti per i tuoi obiettivi?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "acceptance"
   },
@@ -147,11 +147,11 @@
     "text": "Riesci a tollerare emozioni sgradevoli senza cercare subito di eliminarle o evitarle?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "acceptance"
   },
@@ -160,11 +160,11 @@
     "text": "Hai mai provato a definire piccoli passi per avvicinarti ai tuoi obiettivi di vita?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "committedAction"
   },
@@ -173,11 +173,11 @@
     "text": "Riesci a individuare quando i tuoi pensieri stanno cercando di controllare il tuo comportamento?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "defusion"
   },
@@ -186,11 +186,11 @@
     "text": "In che misura riesci a restare presente e consapevole nel momento attuale, anche durante situazioni stressanti?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "contact"
   },
@@ -199,11 +199,11 @@
     "text": "Quando incontri ostacoli, riesci a trovare modi per continuare a muoverti verso ciò che è importante per te?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "committedAction"
   },
@@ -212,11 +212,11 @@
     "text": "Ti capita di agire secondo i tuoi valori anche quando non ti senti motivato o ispirato?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "committedAction"
   },
@@ -225,11 +225,11 @@
     "text": "Riesci a distinguere tra ciò che puoi controllare e ciò che è fuori dal tuo controllo?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "selfAsContext"
   },
@@ -238,11 +238,11 @@
     "text": "Sei disposto/a a provare disagio emotivo se questo ti permette di vivere una vita più significativa?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "acceptance"
   },
@@ -251,11 +251,11 @@
     "text": "Quando prendi decisioni importanti, consideri attivamente i tuoi valori personali?",
     "type": "likert",
     "options": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
+      "Questa frase mi è lontana",
+      "In parte la riconosco",
+      "A volte mi succede",
+      "Spesso mi succede",
+      "Mi succede quasi sempre"
     ],
     "actPole": "values"
   }
