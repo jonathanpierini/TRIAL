@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const promptData = require('../prompts/prompt_master_structured.json');
+const promptData = require('../prompts/prompt_api.json');
 
 // Estrae il polo dominante dal profilo Halifax
 function getDominantPole(profile) {
