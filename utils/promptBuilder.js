@@ -1,44 +1,38 @@
 const fs = require('fs');
 const path = require('path');
 
-// Importa prompt dinamico strutturato
-const promptData = require('../prompts/prompt_api.json');
+const promptData = require('../prompts/prompt_master_structured.json');
 
-// Funzione: ritorna polo dominante da un profilo Halifax
+// Estrae il polo dominante dal profilo Halifax
 function getDominantPole(profile) {
   return Object.entries(profile).sort((a, b) => b[1] - a[1])[0][0];
 }
 
-// Funzione: genera il prompt personalizzato
-function generatePrompt(question, halifaxProfile = null, memory = null) {
-  const base = [];
+// Costruisce il prompt finale
+function generatePrompt(userInput, halifaxProfile = null, memory = null) {
+  let base = promptData.base_prompt_ACT;
+  let toneInfo = '';
+  let extra = '';
 
-  // Memoria attiva
-  if (memory) {
-    if (memory.valori) base.push(`Hai dichiarato che per te conta molto: ${memory.valori}.`);
-    if (memory.crisi_recenti) base.push(`Recentemente hai vissuto: ${memory.crisi_recenti}.`);
-    if (memory.azioni_impegnate) base.push(`Hai intrapreso queste azioni: ${memory.azioni_impegnate}.`);
-    if (memory.note_diario) base.push(`Dal tuo diario emerge: ${memory.note_diario}.`);
-  }
-
-  // Adattamento Halifax
-  let halifaxNote = '';
   if (halifaxProfile) {
     const pole = getDominantPole(halifaxProfile);
-    const tone = promptData.structure.hexaflex_poles[pole]?.tone;
-    const phrase = promptData.structure.hexaflex_poles[pole]?.phrases[0];
-    halifaxNote = `
-
-[Polo attivo: ${pole} – tono ${tone}]
-${phrase}`;
+    const poleData = promptData.poli[pole];
+    if (poleData) {
+      toneInfo = `[Tono: ${poleData.tone}]`;
+      extra = poleData.prompt_addition;
+    }
   }
 
-  // Costruisci prompt finale
-  const finalPrompt = `${base.join('\n')}${halifaxNote}
+  // Inserimento memoria utente
+  let memoryBlock = '';
+  if (memory) {
+    if (memory.valori) memoryBlock += `Hai dichiarato che per te conta: ${memory.valori}.\n`;
+    if (memory.crisi_recenti) memoryBlock += `Crisi recente: ${memory.crisi_recenti}.\n`;
+    if (memory.azioni_impegnate) memoryBlock += `Hai agito su: ${memory.azioni_impegnate}.\n`;
+    if (memory.note_diario) memoryBlock += `Dal diario emerge: ${memory.note_diario}.\n`;
+  }
 
-Utente: ${question}
-Assistente:`;
-  return finalPrompt;
+  return `${base}\n${toneInfo}\n${extra}\n${memoryBlock}\n\nUtente: ${userInput}\nAssistente:`;
 }
 
 module.exports = { generatePrompt };
