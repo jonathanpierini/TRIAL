@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="it">
+<head><meta charset="UTF-8"><title>Chat</title></head>
+<body>
+  <h2>Parla con Mental Wealth</h2>
+  <form method="POST" action="/ask">
+    <textarea name="question" rows="5" cols="60" placeholder="Scrivi qui..."></textarea><br>
+    <button type="submit">Invia</button>
+  </form>
+  <% if (response) { %><div><h3>Risposta:</h3><p><%= response %></p></div><% } %>
+</body>
+</html>

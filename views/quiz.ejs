@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Iniziale</title>
+  <style>
+    body { font-family: Arial; padding: 2rem; background: #f8f9fa; }
+    .container { background: white; padding: 2rem; border-radius: 8px; max-width: 600px; margin: auto; }
+    button { padding: 0.5rem 1rem; margin-top: 1rem; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    h2 { color: #333; }
+    .option { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2 id="question-text">Domanda</h2>
+  <form id="quiz-form">
+    <div id="options"></div>
+    <button type="submit">Avanti</button>
+  </form>
+</div>
+
+<script>
+  const questions = <%- JSON.stringify(questions) %>;
+  let current = 0;
+  const responses = [];
+
+  function renderQuestion() {
+    const q = questions[current];
+    document.getElementById('question-text').innerText = q.text;
+    const optionsHTML = q.options.map((opt, idx) => 
+      `<div class="option"><label><input type="radio" name="answer" value="${idx}" required> ${opt}</label></div>`).join('');
+    document.getElementById('options').innerHTML = optionsHTML;
+  }
+
+  document.getElementById("quiz-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const answer = document.querySelector('input[name="answer"]:checked');
+    responses.push({ questionId: questions[current].id, answerIndex: parseInt(answer.value) });
+    current++;
+    if (current < questions.length) {
+      renderQuestion();
+    } else {
+      const res = await fetch("/api/quiz/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ responses })
+      });
+      if (res.ok) window.location.href = "/chat";
+      else alert("Errore nell'invio del quiz.");
+    }
+  });
+
+  renderQuestion();
+</script>
+</body>
+</html>
