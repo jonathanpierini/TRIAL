@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
-<head><meta charset="UTF-8"><title>Chat</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Parla con Mental Wealth</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 2rem; }
+    .chat-container { max-width: 600px; margin: auto; background: white; padding: 2rem; border-radius: 8px; }
+    textarea { width: 100%; height: 100px; padding: 1rem; font-size: 1rem; margin-bottom: 1rem; }
+    button { background: #007bff; color: white; border: none; padding: 0.7rem 1.5rem; font-size: 1rem; border-radius: 4px; cursor: pointer; }
+    .response-box { margin-top: 2rem; }
+    h3 { margin-bottom: 0.5rem; }
+  </style>
+</head>
 <body>
-  <h2>Parla con Mental Wealth</h2>
-  <form method="POST" action="/ask">
-    <textarea name="question" rows="5" cols="60" placeholder="Scrivi qui..."></textarea><br>
-    <button type="submit">Invia</button>
-  </form>
-  <% if (response) { %><div><h3>Risposta:</h3><p><%= response %></p></div><% } %>
+  <div class="chat-container">
+    <form method="POST" action="/ask">
+      <textarea name="question" placeholder="Scrivi cosa provi, senti o ti preoccupa..." required></textarea><br>
+      <button type="submit">Invia</button>
+    </form>
+
+    <div class="response-box">
+      <h3>Risposta:</h3>
+      <p><%= response %></p>
+    </div>
+  </div>
 </body>
 </html>
